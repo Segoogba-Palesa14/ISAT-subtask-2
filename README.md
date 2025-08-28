@@ -14,7 +14,7 @@ string decimalToBinary(int number) {
     return binary;
 }
 
-// Function to convert a binary string to decimal
+// Function to convert a binary string to decimal number
 int binaryToDecimal(string binaryStr) {
     int decimal = 0;
     for (char bit : binaryStr) {
