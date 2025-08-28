@@ -48,29 +48,31 @@ int hexadecimalToDecimal(string hexStr) {
 int main() {
     int choice;
     while (true) {
-        cout << "\n1. Decimal to Binary\n";
-        cout << "2. Binary to Decimal\n";
-        cout << "3. Decimal to Hexadecimal\n";
-        cout << "4. Hexadecimal to Decimal\n";
-        cout << "5. Exit\n";
-        cout << "Enter choice: ";
+        cout <<"\n Conversion menu";
+        cout << "\n1. Convert Decimal to Binary\n";
+        cout << "2. Convert Binary to Decimal\n";
+        cout << "3. Convert Decimal to Hexadecimal\n";
+        cout << "4. Convert Hexadecimal to Decimal\n";
+        cout<<"5. Demo (Generate and convert random intergers to binary)";
+        cout <<"\n6. Exit\n";
+        cout << "Enter choice (1-6): ";
         cin >> choice;
 
         if (choice == 1) {
             int num; cout << "Enter decimal: "; cin >> num;
-            cout << "Binary: " << decimalToBinary(num) << endl;
+            cout << "Binary representation: " << decimalToBinary(num)  << endl;
         }
         else if (choice == 2) {
             string bin; cout << "Enter binary: "; cin >> bin;
-            cout << "Decimal: " << binaryToDecimal(bin) << endl;
+            cout << "Decimal: representation " << binaryToDecimal(bin) << endl;
         }
         else if (choice == 3) {
             int num; cout << "Enter decimal: "; cin >> num;
-            cout << "Hexadecimal: " << decimalToHexadecimal(num) << endl;
+            cout << "Hexadecimal representation: " << decimalToHexadecimal(num) << endl;
         }
         else if (choice == 4) {
             string hex; cout << "Enter hexadecimal: "; cin >> hex;
-            cout << "Decimal: " << hexadecimalToDecimal(hex) << endl;
+            cout << "Decimal representation: " << hexadecimalToDecimal(hex) << endl;
         }
         else if (choice == 5) {
             break;
